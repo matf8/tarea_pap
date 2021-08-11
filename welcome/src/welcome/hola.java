@@ -103,10 +103,10 @@ public class hola extends JFrame implements ActionListener{
 						String pass = rs.getString("password");						
 						System.out.println("user: " + user + " pass " + pass);
 						if (user.equals(n)){
-                           char[] input = p.getPassword();  // get password
+                           				char[] input = p.getPassword();  // get password
 						   String p = String.valueOf(input);
-                           if (p.equals(pass))
-                                PASS_OK = true;
+                        			   if (p.equals(pass))
+                              				  PASS_OK = true;
 						   else e1 = Err.P_OK;
 						}
 					} while (rs.next());
