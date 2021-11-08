@@ -1,0 +1,25 @@
+body {
+  background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url("https://i.imgur.com/9CndEJ6.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#464646;
+  
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  body {    
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url("https://i.imgur.com/Z4dqwLT.jpg");
+  }
+}

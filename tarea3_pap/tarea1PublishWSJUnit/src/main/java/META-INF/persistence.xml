@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="ObligMat2021_Junit" transaction-type="RESOURCE_LOCAL">
+		<class>logica.Artista</class>
+		<class>logica.Espectaculo</class>
+		<class>logica.Espectador</class>
+		<class>logica.Funcion</class>
+		<class>logica.Paquete</class>
+		<class>logica.Plataforma</class>
+		<class>logica.Registro</class>
+		<class>logica.Usuario</class>	
+		<class>logica.CompraPaquete</class>				
+		<properties>
+			<!-- MYSQL CONFIGURATION -->
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>			
+			<property name="hibernate.hbm2ddl.auto" value="create"/>
+			<property name="hibernate.connection.username" value="root"/>
+			<property name="hibernate.connection.password" value="flashh"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/ticketsdbjunit"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+			<property name="hibernate.connection.isolation" value="2"/>					
+		</properties>	
+	</persistence-unit>
+</persistence>
