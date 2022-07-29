@@ -2,11 +2,9 @@
 *.pdf
 *.class
 tarea1_pap/.settings/
-tarea1_pap/welcome/
 tarea2_pap/.settings/
 tarea2_pap/target/
 tarea3_pap/.settings/
 tarea3_pap/target/
-tarea3_pap/tarea2ClientWS/src/main/webapp/WEB-INF/*
 tarea3_pap/tarea1PublishWS/target/
 tarea3_pap/tarea1PublishWS/.settings/
